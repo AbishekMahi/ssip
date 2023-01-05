@@ -299,7 +299,7 @@ blockquote > cite {font-weight: 400;font-size: 14px;display: block;}
 /* nav top default */
 
 header a.logo img {
-    max-width: 80px;
+    max-width: 90px;
     vertical-align: sub;
 }
 
