@@ -3289,7 +3289,6 @@ ul.rounded li::before {
     list-style: armenian;
     text-align: justify;
     margin-top: 2em;
-
 }
 
 .banner {
@@ -3304,4 +3303,52 @@ ul.rounded li::before {
 
 .banner div h2 {
     font-size: 3rem !important;
+}
+
+.dropdown {
+    float: left !important;
+    overflow: hidden !important;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+/* .navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: red;
+} */
+
+.dropdown-content {
+    display: none ;
+    position: fixed !important;
+    font-size: 15px !important; 
+    background-color: #f9f9f9 !important;
+    min-width: 200px !important;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2) !important;
+    z-index: 999 !important;
+}
+
+.dropdown-content a {
+    float: none ;
+    color: black !important;
+    padding: 12px 16px !important;
+    text-decoration: none !important;
+    display: block !important;
+    text-align: left !important;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd !important;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block !important;
 }
