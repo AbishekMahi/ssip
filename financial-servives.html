@@ -31,7 +31,29 @@
     <meta property="twitter:description"
         content="SSIP is a financial company offering a broad range of financial products like chits, stocks, mutual funds, gold loans and SIP. We keeping in mind the full spectrum of financial and transactional challenges and our clients individual needs.">
     <meta property="twitter:image" content="https://ssipservices.com/corporate-finance/images/logo-banner.png">
-
+    <!-- markup -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org/",
+            "@type": "Organization",
+            "name": "SSIP Services",
+            "url": "https://ssipservices.com/",
+            "logo": "https://ssipservices.com/corporate-finance/images/ssip_logo.png",
+            "image": "https://ssipservices.com/corporate-finance/images/ssip_logo.png",
+            "email": "info@ssipservices.com",
+            "description": "SSIP is a financial company offering a broad range of financial products like chits, stocks, mutual funds, gold loans and SIP.",
+            "address": "G - Floor, Ashok Towers, 45, KB Dasan Rd, Teynampet, Chennai - 600018",
+            "sameAs": [
+                "https://www.facebook.com/ssipservices/",
+                "https://www.instagram.com/ssipservices/",
+                "https://ssipservices.com/"
+            ],
+            "parentOrganization": {
+                "@type": "Organization",
+                "name": "SSIP"
+            }
+        }
+    </script>
     <!-- <meta name="description"
         content="MegaOne is a highly creative, modern, visually stunning and Bootstrap responsive multipurpose studio and portfolio HTML5 template with ready home page demos."> -->
     <link href="corporate-finance/images/favicon.ico" rel="icon">
@@ -70,10 +92,11 @@
                 <!--Nav Links-->
                 <div class="collapse navbar-collapse" id="megaone">
                     <div class="navbar-nav ml-auto">
-                        <a class="nav-link line" href="#slider-section">Home</a>
+                        <a class="nav-link line" href="index.html">Home</a>
                         <a class="nav-link line" href="index.html#about">About </a>
-                        <a class="nav-link line" href="#portfolio">Services</a>
-                        <a class="nav-link line" href="#contact">Contact</a>
+                        <a class="nav-link line active" href="financial-servives.html">Financial Servives</a>
+                        <a class="nav-link line" href="it-services.html">IT Servives</a>
+                        <a class="nav-link line" href="index.html#contact">Contact</a>
                         <!-- <a class="nav-link scroll line" href="#blog">Blog</a> -->
                         <!-- <a href="#portfolio" class="btn btn-large btn-rounded btn-green btn-hvr-up btn-hvr-blue">Get
                             Started Now</a> -->
@@ -112,20 +135,21 @@
                 </a> -->
                     <ul class="navbar-nav text-capitalize">
                         <li class="nav-item">
-                            <a class="nav-link scroll" href="index.html#slider-section">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link scroll" href="index.html#about">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link scroll" href="#portfolio">Our Services</a>
+                            <a class="nav-link line active" href="financial-servives.html#finance">Financial
+                                Servives</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link line" href="it-services.html">IT Servives</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link scroll" href="#contact">Contact Us</a>
                         </li>
-                        <!-- <li class="nav-item">
-                        <a class="nav-link scroll" href="#blog">Blog</a>
-                    </li> -->
                         <li class="get-started-btn">
                             <a href="" class="btn btn-medium btn-rounded btn-blue btn-hvr-green btn-hvr-up d-lg-none"
                                 data-animation-duration="500" data-fancybox data-src="#animatedModal">Get Started</a>
@@ -228,7 +252,7 @@
         style="background: url(https://s41256.pcdn.co/wp-content/uploads/2020/07/financial-services-main-@2x-scaled_opt.jpg); ">
     </section> -->
     <div class="banner"
-        style="background: url(https://s41256.pcdn.co/wp-content/uploads/2020/07/financial-services-main-@2x-scaled_opt.jpg) no-repeat border-box;background-size: cover;">
+        style="background: url(/images/financial-services.jpg) no-repeat border-box;background-size: cover;">
         <div>
             <center>
                 <h2 class="sub-head">Financial Services</h2>
@@ -236,7 +260,7 @@
         </div>
     </div>
     <!-- START PORTFOLIO -->
-    <section id="portfolio" class="padding portfolio">
+    <section id="" class="padding">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -421,7 +445,7 @@
                 <div class="row">
                     <div class="col">
                         <h4 class="main-font text-blue font-16 font-weight-600">Address</h4>
-                        <p class="alt-font font-14 light-grey mt-3">G - Floor, Rajam Towers, 45, KB Dasan Rd, <br>
+                        <p class="alt-font font-14 light-grey mt-3">G - Floor, Ashok Towers, 45, KB Dasan Rd, <br>
                             Teynampet, Chennai - 600018 </p>
                     </div>
                 </div>
@@ -747,7 +771,11 @@
 
         </div>
     </div>
-
+    <script>
+        if (window.location.protocol != "https:") {
+            window.location.protocol = "https:";
+        }
+    </script>
     <!-- JavaScript -->
     <script src="vendor/js/bundle.min.js"></script>
     <!-- Plugin Js -->
